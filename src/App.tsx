@@ -276,6 +276,8 @@ export default function App() {
     const { data, error } = await supabase.auth.signInWithPassword({
       email: loginForm.email,
       password: loginForm.password,
+
+      
     });
 
     if (error) {
