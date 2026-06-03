@@ -866,6 +866,15 @@ export default function App() {
               >
                 Contact
               </a>
+              {<button
+  onClick={() => {
+    setViewMode('admin');
+    setMobileMenuOpen(false);
+  }}
+  className="block w-full text-left px-4 py-3 text-slate-700 hover:bg-slate-50 rounded-xl transition font-medium"
+>
+  Admin Login
+</button>}
               <div className="pt-5 border-t border-slate-100 mt-5 space-y-3">
                 <a
                   href={`tel:${phoneNumbers[0].replace(/\s/g, '')}`}
@@ -1378,7 +1387,7 @@ export default function App() {
                 <p className="text-sm text-gray-500 mb-2">7 Seater Luxury</p>
                 <div className="flex items-center justify-center space-x-1 text-orange-600 font-medium">
                   <Users className="w-4 h-4" />
-                  <span className="text-sm">7 Passengers</span>
+                  <span className="text-sm">4 Passengers</span>
                 </div>
               </div>
             </div>
