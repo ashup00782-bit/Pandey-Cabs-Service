@@ -286,7 +286,7 @@ export default function App() {
     }
 
     if (data.user) {
-      const isAdmin = session.user.email === 'mcsta6631@gmail.com';
+      const isAdmin = data.user.email === 'mcsta6631@gmail.com';
       if (!isAdmin) {
         await supabase.auth.signOut();
         setAdminAuth({ isAuthenticated: false, loading: false, user: null, error: 'Admin access only' });
