@@ -730,7 +730,7 @@ export default function App() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-brand-500" />
-                <span className="text-slate-300">pandeycabservice@gmail.com</span>
+                <span className="text-slate-300">pandeycabservice72@gmail.com</span>
               </div>
             </div>
             <div className="flex items-center gap-5">
