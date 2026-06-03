@@ -214,7 +214,7 @@ export default function App() {
     checkAdminAuth();
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       if (session?.user) {
-        const isAdmin = session.user.email === 'mcsta6631@gmail.com';
+        const isAdmin = session.user.email === 'mcstan6631@gmail.com';
         if (isAdmin) {
           setAdminAuth({ isAuthenticated: true, loading: false, user: session.user, error: '' });
         } else {
@@ -258,7 +258,7 @@ export default function App() {
   const checkAdminAuth = async () => {
     const { data: { session } } = await supabase.auth.getSession();
     if (session?.user) {
-      const isAdmin = session.user.email === 'mcsta6631@gmail.com';
+      const isAdmin = session.user.email === 'mcstan6631@gmail.com';
       if (isAdmin) {
         setAdminAuth({ isAuthenticated: true, loading: false, user: session.user, error: '' });
       } else {
@@ -286,7 +286,7 @@ export default function App() {
     }
 
     if (data.user) {
-      const isAdmin = data.user.email === 'mcsta6631@gmail.com';
+      const isAdmin = data.user.email === 'mcstan6631@gmail.com';
       if (!isAdmin) {
         await supabase.auth.signOut();
         setAdminAuth({ isAuthenticated: false, loading: false, user: null, error: 'Admin access only' });
