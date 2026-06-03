@@ -279,6 +279,8 @@ export default function App() {
 
       
     });
+    console.log("LOGIN ERROR =", error);
+    console.log("LOGIN USER =", data?.user);
 
     if (error) {
       setAdminAuth({ isAuthenticated: false, loading: false, user: null, error: 'Invalid email or password' });
